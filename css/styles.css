@@ -1,6 +1,8 @@
 @charset "UTF-8";
-.font-family {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .sairv-logo-rounded {
@@ -12,8 +14,8 @@
 }
 
 .sairv-logo-size {
-  height: 100px;
-  width: 100px;
+  height: 150px;
+  width: 150px;
 }
 
 .navbar {
@@ -40,6 +42,19 @@
   border-radius: 32px;
 }
 
+.container-fluid-start {
+  display: flex;
+  flex-direction: column;
+  justify-content: between;
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  .container-fluid-start {
+    align-items: flex-start; /* Alinea a la izquierda en pantallas grandes y mayores */
+    text-align: left; /* Alinea el texto a la izquierda en pantallas grandes y mayores */
+  }
+}
 .card-services-color {
   background: linear-gradient(70deg, #161616, #21558F);
   border-color: transparent;
@@ -76,6 +91,69 @@
 @media (max-width: 768px) {
   .contenedor-transparente {
     width: 100%; /* El contenedor hijo ocupa el 100% del contenedor padre en dispositivos móviles */
+  }
+}
+.navbar-aliados {
+  background-color: #333;
+  padding: 10px;
+}
+
+.nav-list-aliados {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Center items on large screens */
+  gap: 20px; /* Space between items */
+}
+
+.nav-item-aliados {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+  transition: background-color 0.3s;
+}
+
+.nav-item:hover {
+  background-color: #555;
+  border-radius: 16px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) { /* For md screens and below */
+  .nav-list-aliados {
+    flex-direction: row;
+    justify-content: flex-end; /* Align items to the right */
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .nav-item-aliados {
+    flex: 0 0 auto;
+  }
+}
+@media (max-width: 768px) {
+  .imagenes-aliados {
+    width: 80px;
+    height: 80px; /* disminuye el tamanio de los iconos de ONU SEP ETC en pantallas grandes*/
+  }
+}
+@media (min-width: 770px) {
+  .imagenes-aliados {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media (min-width: 850px) {
+  .imagenes-aliados {
+    width: 120px;
+    height: 120px;
+  }
+}
+@media (min-width: 920px) {
+  .imagenes-aliados {
+    width: 150px;
+    height: 150px; /* Aumenta el tamanio de los iconos de ONU SEP ETC en pantallas grandes*/
   }
 }
 .titles-style {
