@@ -1,0 +1,113 @@
+.font-family{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    
+  }
+
+  .sairv-logo-rounded{
+    border-radius: 100%;
+}
+
+.navbar-buttons{
+    font-weight: bold;
+}
+
+
+.sairv-logo-size{
+    height: 100px;
+    width: 100px;
+}
+
+.navbar {
+    padding: 0.5rem 1rem;
+    position: relative;
+  }
+  
+  .navbar-toggler {
+    position: absolute;
+    right: 2rem;
+    top: 2.5rem;
+    align-items: center;
+  }
+  
+  .navbar-nav {
+    margin-left: auto;
+  }
+  
+  .navbar-buttons {
+    margin: 0;
+  }
+  
+  .rounded-border-navbar{
+    border-radius: 32px;
+}
+
+.card-services-color{
+    background: linear-gradient(70deg,#161616, #21558F)
+    ;
+    border-color: transparent;
+  }
+
+.navbar-gradient{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 10%, rgba(33,85,143,1) 60%, rgb(20, 20, 20) 100%);}  
+
+    .contenedor-principal {
+        background-image: url('../imagenes/header\ -\ Copy.jpg');
+      
+        background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+        background-position: right center;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start; /* Alinea el contenedor hijo a la izquierda */
+        max-width: 1920px;
+        min-height: 500px;
+        width: 100%;
+        box-sizing: border-box; 
+        border-radius: 22px;
+      }
+      
+      .contenedor-transparente {
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        color: white;
+        width: 50%;
+        text-align: center;
+        border-radius: 16px;
+      }
+      
+      @media (max-width: 768px) {
+        .contenedor-transparente {
+            width: 100%; /* El contenedor hijo ocupa el 100% del contenedor padre en dispositivos móviles */
+        }
+      }
+
+
+.titles-style{
+    font-weight: bold;
+}
+
+.rounded-border-card{
+    border-radius: 22px;
+}
+
+.rounded-border-content{
+    border-radius: 16px;
+}
+
+.navbar-margin{
+    margin-top: 50px;
+}
+
+.cards-buttons{
+    border-radius: 16px;
+    background-color: #21558F;
+    
+}
+
+.service-image-size{
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+}
