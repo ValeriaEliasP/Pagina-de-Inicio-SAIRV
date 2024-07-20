@@ -18,6 +18,10 @@
     width: 150px;
 }
 
+.indeex-logo-size{
+  height: 100px;
+  width: 100px;
+}
 .navbar {
     padding: 0.5rem 1rem;
     position: relative;
@@ -27,8 +31,9 @@
   .navbar-toggler {
     position: absolute;
     right: 2rem;
-    top: 2.5rem;
+    top: 4.5rem;
     align-items: center;
+    text-align: left;
   }
   
   .navbar-nav {
